@@ -1,15 +1,25 @@
-const Banner = () => {
+
+const Banner = ({ info }) => {
+    console.log(info);
     return (
         <header>
-            <div className="w-full bg-center bg-cover h-[38rem]" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80')" }}>
+            <div className="w-full bg-center bg-cover h-[38rem]" style={{
+                backgroundImage: `linear-gradient(to right, #151515, rgba(21, 21, 21, 0)), url('${info.imageUrl}')`
+            }}>
                 <div className="flex items-center justify-center w-full h-full bg-gray-900/40">
                     <div className="text-center">
-                        <h1 className="text-3xl font-semibold text-white lg:text-4xl">
-                            Build your new <span className="text-blue-400">Saas</span> Project
+                        <p className="text-6xl font-bold text-center">Fusion Ghor</p>
+                        <h1 className="text-3xl font-semibold text-white lg:text-4xl mt-4 mb-4">
+                            {info.title}
                         </h1>
-                        <button className="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                        {
+                            info.buttonText.map((btn, idx) => <button className="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500 mr-4" key={idx}>{btn}</button>)
+                        }
+
+
+                        {/* <button className="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
                             Start project
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>

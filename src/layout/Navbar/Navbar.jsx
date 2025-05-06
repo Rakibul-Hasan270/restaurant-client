@@ -4,7 +4,10 @@ import { NavLink } from 'react-router';
 const Navbar = () => {
     const links = <div className='flex items-center justify-self-center gap-10 mr-10'>
         <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
+        <NavLink>Menu</NavLink>
+        <NavLink>Reservation</NavLink>
+        <NavLink>Contact</NavLink>
+        <NavLink>Gallery</NavLink>
         <NavLink>Login</NavLink>
     </div>
     return (

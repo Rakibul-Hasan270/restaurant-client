@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import useAuth from '../../hook/useAuth';
+import toast from 'react-hot-toast';
 
 const Register = () => {
-    const { createUser } = useAuth();
+    const { user, createUser, updateUserProfile, setUser } = useAuth();
 
     const handelFromSubmit = async event => {
         event.preventDefault();
@@ -17,8 +18,10 @@ const Register = () => {
         console.log(name, photo, email, password, confirm_pass);
 
         try {
-            const user = await createUser(email, password);
-
+            await createUser(email, password);
+            updateUserProfile(name, photo);
+            setUser({ ...user, displayName: name, photoURL: photo });
+            toast.success('login success')
         } catch (err) {
             console.log(err)
         }

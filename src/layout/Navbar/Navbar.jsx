@@ -1,7 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import useAuth from '../../hook/useAuth';
 
 const Navbar = () => {
+    const { logOut, user } = useAuth()
+    if(user){
+        console.log(user)
+    }
     const links = <div className='flex items-center justify-self-center gap-10 mr-10'>
         <NavLink>Home</NavLink>
         <NavLink>Menu</NavLink>
@@ -16,13 +21,13 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-xl">daisyUI</a>
             </div>
             {links}
-            <div className="flex-none">
+            <div title={user?.email} className="flex-none">
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img
-                                alt="Tailwind CSS Navbar component"
-                                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                alt={user?.displayName}
+                                src={user?.photoURL} />
                         </div>
                     </div>
                     <ul
@@ -31,11 +36,10 @@ const Navbar = () => {
                         <li>
                             <a className="justify-between">
                                 Profile
-                                <span className="badge">New</span>
                             </a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        <li><NavLink to='/register'>Register</NavLink></li>
+                        <li onClick={() => logOut()}><a>Logout</a></li>
                     </ul>
                 </div>
             </div>

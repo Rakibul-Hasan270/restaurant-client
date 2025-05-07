@@ -1,6 +1,5 @@
 
 const Banner = ({ info }) => {
-    console.log(info);
     return (
         <header>
             <div className="w-full bg-center bg-cover h-[38rem]" style={{

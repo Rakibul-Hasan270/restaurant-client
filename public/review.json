@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Ahmed",
+        "avatar": "https://i.pravatar.cc/150?img=1",
+        "title": "Delicious and fresh!",
+        "review": "Absolutely loved the food! Everything was fresh, flavorful, and served warm. The staff was super friendly too. Will definitely order again.",
+        "rating": 5,
+        "date": "2025-04-18"
+    },
+    {
+        "id": 2,
+        "name": "Rafiul Islam",
+        "avatar": "https://i.pravatar.cc/150?img=2",
+        "title": "Great service, average taste",
+        "review": "The service was excellent and timely, but I felt the biryani was a bit too dry for my liking. Everything else was good though.",
+        "rating": 3,
+        "date": "2025-04-20"
+    },
+    {
+        "id": 3,
+        "name": "Nusrat Jahan",
+        "avatar": "https://i.pravatar.cc/150?img=3",
+        "title": "Best dessert ever!",
+        "review": "I tried the chocolate lava cake and it was heavenly! One of the best desserts I’ve had in a while. Highly recommend!",
+        "rating": 5,
+        "date": "2025-04-22"
+    },
+    {
+        "id": 4,
+        "name": "Tarek Hossain",
+        "avatar": "https://i.pravatar.cc/150?img=4",
+        "title": "Fast delivery, good food",
+        "review": "The food arrived quickly and was well-packed. Taste was good, especially the grilled chicken and garlic naan combo.",
+        "rating": 4,
+        "date": "2025-04-25"
+    },
+    {
+        "id": 5,
+        "name": "Lamia Sultana",
+        "avatar": "https://i.pravatar.cc/150?img=5",
+        "title": "Loved the veg options!",
+        "review": "As a vegetarian, I found plenty of tasty options on the menu. The paneer tikka was excellent and well-spiced.",
+        "rating": 4,
+        "date": "2025-04-27"
+    }
+]

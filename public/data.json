@@ -1,0 +1,81 @@
+[
+    {
+      "name": "Chicken Biryani",
+      "description": "Delicious Hyderabadi-style biryani made with basmati rice, special spices, and chicken.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 250,
+      "category": "Main Course",
+      "ingredients": ["Rice", "Chicken", "Ghee", "Onion", "Spices"],
+      "spice_level": "Medium",
+      "availability": "Available",
+      "rating": 4.5,
+      "prep_time": "25 minutes",
+      "is_veg": false
+    },
+    {
+      "name": "Veg Spring Roll",
+      "description": "Crispy spring rolls stuffed with seasoned vegetables and spices.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 120,
+      "category": "Starter",
+      "ingredients": ["Flour", "Carrot", "Cabbage", "Chili"],
+      "spice_level": "Mild",
+      "availability": "Available",
+      "rating": 4.2,
+      "prep_time": "15 minutes",
+      "is_veg": true
+    },
+    {
+      "name": "Chocolate Brownie",
+      "description": "Soft and sweet brownie made with rich chocolate and nuts.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 90,
+      "category": "Dessert",
+      "ingredients": ["Sugar", "Cocoa Powder", "Nuts", "Flour"],
+      "spice_level": null,
+      "availability": "Available",
+      "rating": 4.8,
+      "prep_time": "10 minutes",
+      "is_veg": true
+    },
+    {
+      "name": "Chili Chicken",
+      "description": "Spicy fried chicken dish with soy sauce, green chilies, and onions.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 180,
+      "category": "Main Course",
+      "ingredients": ["Chicken", "Soy Sauce", "Chili", "Onion"],
+      "spice_level": "Spicy",
+      "availability": "Available",
+      "rating": 4.3,
+      "prep_time": "20 minutes",
+      "is_veg": false
+    },
+    {
+      "name": "Lemon Mint Juice",
+      "description": "Refreshing cold drink made with lemon, mint, sugar, and ice.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 60,
+      "category": "Drinks",
+      "ingredients": ["Lemon", "Mint", "Sugar", "Ice"],
+      "spice_level": null,
+      "availability": "Available",
+      "rating": 4.0,
+      "prep_time": "5 minutes",
+      "is_veg": true
+    },
+    {
+      "name": "Lemon Mint Juice",
+      "description": "Refreshing cold drink made with lemon, mint, sugar, and ice.",
+      "image": "https://i.postimg.cc/nzVPtD39/pexels-marty-shih-2147889088-31893699.jpg",
+      "price": 60,
+      "category": "Drinks",
+      "ingredients": ["Lemon", "Mint", "Sugar", "Ice"],
+      "spice_level": null,
+      "availability": "Available",
+      "rating": 4.0,
+      "prep_time": "5 minutes",
+      "is_veg": true
+    }
+  ]
+  

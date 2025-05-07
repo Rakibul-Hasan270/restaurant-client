@@ -17,7 +17,7 @@ const Reviews = () => {
 
     return (
         <div className='max-w-6xl mx-auto px-4 py-12'>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">Real Stories from Real Guests</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">Voices of Satisfaction</h2>
             <p className='text-center mb-10 max-w-3xl mx-auto'>
                 We value every bite and every opinion. Here’s what our amazing customers have to say about their experience at our restaurant — from the food to the service and everything in between.
             </p>

@@ -8,7 +8,7 @@ const Navbar = () => {
         <NavLink>Reservation</NavLink>
         <NavLink>Contact</NavLink>
         <NavLink>Gallery</NavLink>
-        <NavLink>Login</NavLink>
+        <NavLink to='/login'>Login</NavLink>
     </div>
     return (
         <div className="navbar bg-base-100 shadow-sm max-w-6xl mx-auto">

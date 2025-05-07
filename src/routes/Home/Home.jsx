@@ -4,9 +4,9 @@ import About from '../../layout/About/About';
 
 const Home = () => {
     return (
-        <div>
+        <div className='space-y-12'>
             <Carousel></Carousel>
-            {/* <About></About> */}
+            <About></About>
         </div>
     );
 };

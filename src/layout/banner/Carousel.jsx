@@ -17,12 +17,12 @@ const Carousel = () => {
         },
         {
             title: 'Where every bite tells a story, And every dish is a celebration.',
-            imageUrl: 'https://i.postimg.cc/nr0xHrtj/pexels-marty-shih-2147889088-31893699.jpg',
+            imageUrl: 'https://i.postimg.cc/J05yQgC7/patrick-tomasso-GXXYk-Swnd-P4-unsplash.jpg',
             buttonText: ['View Menu', 'Book a Table']
         },
         {
             title: 'Not just a meal — it’s a flavorful escape, Crafted with soul, served with color.',
-            imageUrl: 'https://i.postimg.cc/nr0xHrtj/pexels-marty-shih-2147889088-31893699.jpg',
+            imageUrl: 'https://i.postimg.cc/VkxYdR2K/pexels-chanwalrus-941861.jpg',
             buttonText: ['View Menu', 'Book a Table']
         },
     ];
@@ -44,10 +44,6 @@ const Carousel = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
         >
-            {/* <SwiperSlide>
-                <Banner></Banner>
-            </SwiperSlide> */}
-
             {
                 bannerData.map((info, idx) => <SwiperSlide key={idx}><Banner info={info}></Banner></SwiperSlide>)
             }

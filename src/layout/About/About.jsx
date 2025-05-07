@@ -1,42 +1,241 @@
+// import React from 'react';
+// import { Link } from 'react-router';
+// import { motion } from 'framer-motion';
+
+// const About = () => {
+//   return (
+//     <div className="min-h-screen py-12 px-4 bg-base-100">
+//       <p className='text-5xl font-bold text-center mb-12'>About Us</p>
+
+//       <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-5'>
+
+//         {/* Text Section */}
+//         {/* <motion.div
+//           initial={{ opacity: 0, x: -50 }}
+//           animate={{ opacity: 1, x: 0 }}
+//           transition={{ duration: 0.6 }}
+//           className='space-y-6 min-h-screen'
+//         >
+//           <p className='italic text-3xl font-bold text-center'>Who are we?</p>
+//           <p>
+//             <strong>Fusion Ghor</strong> is more than just a place to eat — it’s where flavor, hospitality, and passion come together. 
+//             We blend tradition with innovation to create an experience that satisfies both heart and appetite. With fresh ingredients, warm service, 
+//             and a welcoming vibe, we aim to make every visit a little more special. Welcome to 
+//             <strong> Fusion Ghor</strong>, where good food meets good people.
+//           </p>
+//           <div className='text-center'>
+//             <Link to='/contact'>
+//               <button className='btn btn-info'>Contact</button>
+//             </Link>
+//           </div>
+//         </motion.div> */}
+
+
+//         <motion.div
+//           initial={{ opacity: 0, x: 50 }}
+//           whileInView={{ opacity: 1, x: 0 }}
+//           transition={{ duration: 0.6 }}
+//           viewport={{ once: true }}
+//         >
+//           <p className='italic text-3xl font-bold text-center mb-6'>Who Are We?</p>
+//           <div className="join join-vertical bg-base-100">
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" defaultChecked />
+//               <div className="collapse-title font-semibold">Our Story</div>
+//               <div className="collapse-content text-sm">
+//                 Our Story is a journey of passion, culture, and flavor — bringing people together through authentic recipes and heartfelt hospitality.
+//               </div>
+//             </div>
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" />
+//               <div className="collapse-title font-semibold">Get to Know Us</div>
+//               <div className="collapse-content text-sm">
+//                 Get to Know Us — a team driven by flavor, tradition, and care, creating memorable dining experiences with every plate we serve.
+//               </div>
+//             </div>
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" />
+//               <div className="collapse-title font-semibold">Behind Fusion Ghor</div>
+//               <div className="collapse-content text-sm">
+//                 Behind Fusion Ghor lies a passion for blending tradition with creativity, serving food that tells a story with every delicious bite.
+//               </div>
+//             </div>
+//             <div className='text-center mt-4'>
+//               <Link to='/contact'>
+//                 <button className='btn btn-info'>Contact</button>
+//               </Link>
+//             </div>
+//           </div>
+//         </motion.div>
+
+
+//         {/* Image Section */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 50 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.8 }}
+//           viewport={{ once: true }}
+//           className="flex items-center justify-center"
+//         >
+//           <img
+//             src="https://i.postimg.cc/FzMQcnBc/talking-employees.jpg"
+//             alt="Employees talking inside Fusion Ghor restaurant"
+//             className="w-full h-full object-cover rounded-lg shadow-lg max-h-[500px]"
+//           />
+//         </motion.div>
+
+//         {/* Accordion Section */}
+//         <motion.div
+//           initial={{ opacity: 0, x: 50 }}
+//           whileInView={{ opacity: 1, x: 0 }}
+//           transition={{ duration: 0.6 }}
+//           viewport={{ once: true }}
+//         >
+//           <p className='italic text-3xl font-bold text-center mb-6'>What's special?</p>
+//           <div className="join join-vertical bg-base-100">
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" defaultChecked />
+//               <div className="collapse-title font-semibold">Fresh, locally-sourced ingredients in every dish.</div>
+//               <div className="collapse-content text-sm">
+//                 We serve fresh, locally-sourced ingredients — supporting local farms while delivering natural flavor, quality, and seasonal goodness in every bite.
+//               </div>
+//             </div>
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" />
+//               <div className="collapse-title font-semibold">A unique blend of traditional and fusion recipes.</div>
+//               <div className="collapse-content text-sm">
+//                 We combine traditional recipes with modern fusion techniques, offering a unique dining experience that celebrates both heritage and innovation.
+//               </div>
+//             </div>
+//             <div className="collapse collapse-arrow join-item border-base-300 border">
+//               <input type="radio" name="faq" />
+//               <div className="collapse-title font-semibold">100% Halal-certified meals.</div>
+//               <div className="collapse-content text-sm">
+//                 We proudly serve 100% Halal-certified meals, ensuring every dish meets strict dietary standards without compromising on flavor or quality.
+//               </div>
+//             </div>
+//             <div className='text-center mt-4'>
+//               <Link to='/contact'>
+//                 <button className='btn btn-info'>Gallery</button>
+//               </Link>
+//             </div>
+//           </div>
+//         </motion.div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default About;
+
+
 import React from 'react';
+import { Link } from 'react-router';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className=" py-16 px-6 md:px-10">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-orange-700 mb-6">আমাদের সম্পর্কে</h2>
-        
-        <p className="text-lg mb-4">
-          <span className="font-semibold">“রসনা রঙ্গ”</span> — রঙে ও স্বাদে ভরা একটি অনন্য রেস্টুরেন্ট, 
-          যেখানে প্রতিটি খাবার শুধু খাদ্য নয়, এক একটি গল্প।
-        </p>
-        
-        <p className="text-lg mb-4">
-          শুরুটা হয়েছিল ঘরের মায়ের রান্না থেকে অনুপ্রাণিত হয়ে। আমাদের স্বপ্ন ছিল এমন একটা 
-          জায়গা তৈরি করা, যেখানে দেশি খাবার আর আধুনিক পরিবেশের একসাথে মিল থাকবে।
-        </p>
-        
-        <p className="text-lg mb-4">
-          আমরা বিশ্বাস করি খাবার শুধু পেট নয়, মনও ভরাতে হয়। তাই প্রতিটি রেসিপিতে থাকে 
-          যত্ন, ভালোবাসা আর দেশজ স্বাদের ছোঁয়া।
-        </p>
-        
-        <p className="text-lg mb-4">
-          আমাদের স্বাক্ষর আইটেমগুলোর মধ্যে রয়েছে <span className="italic">“ইলিশ চিজ বল”, “পান্তা প্লেট 2.0”</span> 
-          ও <span className="italic">“মাটির হাঁড়ির বিরিয়ানি”</span>। এখানকার প্রতিটি পরিবেশন আপনাকে মনে করিয়ে 
-          দেবে গ্রামবাংলার সেই চেনা স্বাদ।
-        </p>
-        
-        <p className="text-lg mb-8">
-          রঙিন আলোকসজ্জা, মনমাতানো সঙ্গীত আর ইনস্টাগ্রাম-যোগ্য পরিবেশ — <span className="font-medium">রসনা রঙ্গ</span> 
-          শুধু খাওয়ার জায়গা নয়, এটি একটি অনুভব।
-        </p>
+    <div className="min-h-screen py-12 px-4 bg-base-100">
+      <p className='text-5xl font-bold text-center mb-12'>About Us</p>
 
-        <p className="text-xl font-semibold text-orange-800 italic">
-          আমাদের স্বাদ একবার চেখে দেখুন — মনে থাকবে বহুদিন!
-        </p>
+      <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-5'>
+
+        {/* Who Are We Section */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col justify-between h-full"
+        >
+          <p className='italic text-3xl font-bold text-center mb-6'>Who Are We?</p>
+          <div className="join join-vertical bg-base-100 flex-1">
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="who" defaultChecked />
+              <div className="collapse-title font-semibold">Our Story</div>
+              <div className="collapse-content text-sm">
+                Our Story is a journey of passion, culture, and flavor — bringing people together through authentic recipes and heartfelt hospitality.
+              </div>
+            </div>
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="who" />
+              <div className="collapse-title font-semibold">Get to Know Us</div>
+              <div className="collapse-content text-sm">
+                Get to Know Us — a team driven by flavor, tradition, and care, creating memorable dining experiences with every plate we serve.
+              </div>
+            </div>
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="who" />
+              <div className="collapse-title font-semibold">Behind Fusion Ghor</div>
+              <div className="collapse-content text-sm">
+                Behind Fusion Ghor lies a passion for blending tradition with creativity, serving food that tells a story with every delicious bite.
+              </div>
+            </div>
+            <div className='text-center mt-4'>
+              <Link to='/contact'>
+                <button className='btn btn-info'>Contact</button>
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Image Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex items-center justify-center h-full"
+        >
+          <img
+            src="https://i.postimg.cc/FzMQcnBc/talking-employees.jpg"
+            alt="Employees talking inside Fusion Ghor restaurant"
+            className="w-full h-full object-cover rounded-lg shadow-lg max-h-[500px]"
+          />
+        </motion.div>
+
+        {/* What's Special Section */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col justify-between h-full"
+        >
+          <p className='italic text-3xl font-bold text-center mb-6'>What's Special?</p>
+          <div className="join join-vertical bg-base-100 flex-1">
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="special" defaultChecked />
+              <div className="collapse-title font-semibold">Fresh, locally-sourced ingredients in every dish.</div>
+              <div className="collapse-content text-sm">
+                We serve fresh, locally-sourced ingredients — supporting local farms while delivering natural flavor, quality, and seasonal goodness in every bite.
+              </div>
+            </div>
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="special" />
+              <div className="collapse-title font-semibold">A unique blend of traditional and fusion recipes.</div>
+              <div className="collapse-content text-sm">
+                We combine traditional recipes with modern fusion techniques, offering a unique dining experience that celebrates both heritage and innovation.
+              </div>
+            </div>
+            <div className="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="special" />
+              <div className="collapse-title font-semibold">100% Halal-certified meals.</div>
+              <div className="collapse-content text-sm">
+                We proudly serve 100% Halal-certified meals, ensuring every dish meets strict dietary standards without compromising on flavor or quality.
+              </div>
+            </div>
+            <div className='text-center mt-4'>
+              <Link to='/gallery'>
+                <button className='btn btn-info'>Gallery</button>
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
+import Lottie from "lottie-react";
+import img from '../../assets/Animation - 1746678949761.json'
 
 const About = () => {
   return (
@@ -56,11 +58,11 @@ const About = () => {
           viewport={{ once: true }}
           className="h-full flex items-center justify-center"
         >
-          <img
-            src="https://i.postimg.cc/FzMQcnBc/talking-employees.jpg"
-            alt="Employees inside Fusion Ghor"
-            className="w-full h-full object-cover rounded-lg shadow-lg max-h-[500px]"
-          />
+          <div className=''>
+            {/* <Lottie className='h-80' animationData={img} loop={true} /> */}
+            <Lottie className='h-[500px] w-[500px]' animationData={img} loop={true} />
+          </div>
+
         </motion.div>
 
         {/* What's Special Accordion Section */}

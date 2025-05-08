@@ -60,7 +60,7 @@ const About = () => {
         >
           <div className=''>
             {/* <Lottie className='h-80' animationData={img} loop={true} /> */}
-            <Lottie className='h-[500px] w-[500px]' animationData={img} loop={true} />
+            <Lottie className='h-[500px] w-[600px]' animationData={img} loop={true} />
           </div>
 
         </motion.div>

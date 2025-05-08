@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
 
 const ItemCart = ({ item }) => {
     const { availability, category, description, image, is_veg, name, prep_time, price, rating, spice_level } = item;
 
     return (
-        <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <Link  className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 border border-gray-600 hover:border-cyan-500">
             <motion.img
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
@@ -59,7 +60,7 @@ const ItemCart = ({ item }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

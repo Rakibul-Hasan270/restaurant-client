@@ -1,13 +1,15 @@
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
 import useAuth from '../../hook/useAuth';
 import ItemCart from '../ItemCart/ItemCart';
+import useAxiosSecure from '../../hook/useAxiosSecure';
 
 const Menu = () => {
     const { user } = useAuth();
+    const axiosSecure = useAxiosSecure();
 
     const getData = async () => {
-        const res = await axios('/data.json');
+        const res = await axiosSecure.get('/item');
+        console.log(res)
         return res.data;
     }
 
